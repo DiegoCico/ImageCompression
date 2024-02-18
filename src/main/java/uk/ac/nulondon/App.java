@@ -40,7 +40,7 @@ public final class App {
         String src = in.nextLine();
         ImageProcessor ip = new ImageProcessor(new File(src));
 
-        if (!src.equals("N/A")) {
+        if (!"N/A".equals(src)) {
             String userInput;
             while (true) {
                 // Display options to the user
@@ -50,7 +50,7 @@ public final class App {
                 System.out.println("U for undo");
                 // Process user input
                 userInput = in.nextLine();
-                if (userInput.equalsIgnoreCase("q")) {
+                if ("q".equalsIgnoreCase(userInput)) {
                     break;
                 }
 
@@ -60,7 +60,7 @@ public final class App {
                         ip.colorColumnRed(col);
                         ip.exportImage("src/img/process/newImg.png");
                         System.out.println("Would you like to remove it? (d for yes)");
-                        if (in.nextLine().toLowerCase().equals("d")) {
+                        if ("d".equals(in.nextLine().toLowerCase())) {
                             ip.removeSpecificCol(col);
                             ip.exportImage("src/img/output/newImg.png");
                         }
@@ -70,7 +70,7 @@ public final class App {
                         ip.colorColumnRed(random);
                         ip.exportImage("src/img/process/newImg.png");
                         System.out.println("Would you like to remove it? (d for yes)");
-                        if (in.nextLine().toLowerCase().equals("d")) {
+                        if ("d".equals(in.nextLine().toLowerCase())) {
                             ip.removeSpecificCol(random);
                             ip.exportImage("src/img/output/newImg.png");
                         }
