@@ -1,1 +1,7 @@
-This Java-based image processing application offers a command-line interface for both modifying existing images and creating new pixel-based graphics. Users can easily identify and colorize specific image columns, remove rows, and undo changes, or they can create images from scratch, setting individual pixels to specific colors. The application, utilizing Java's image handling capabilities, allows for intricate image processing tasks and exporting the final results as PNG files. It's an ideal tool for those looking to explore basic image editing and pixel art creation through a straightforward, interactive console experience.
+# uk.ac.nulondon:Project2
+
+Write your project description here...
+
+Java version 21
+
+Generated at 2024-03-25 12:38:01
